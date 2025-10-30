@@ -1,0 +1,46 @@
+{
+  "intent_types": {
+    "instruction": {
+      "rule_weights": {
+        "r01_strip_polite": 0.8,
+        "r05_remove_fillers": 0.9,
+        "r08_normalize_punctuation": 1.0
+      },
+      "preferred_llm": "gemini",
+      "semantic_threshold": 0.7
+    },
+    "creative": {
+      "rule_weights": {
+        "r01_strip_polite": 0.5,
+        "r05_remove_fillers": 0.6,
+        "r08_normalize_punctuation": 0.7
+      },
+      "preferred_llm": "hf_inference",
+      "semantic_threshold": 0.6
+    },
+    "coding": {
+      "rule_weights": {
+        "r01_strip_polite": 0.3,
+        "r05_remove_fillers": 0.9,
+        "r08_normalize_punctuation": 0.8
+      },
+      "preferred_llm": "gemini",
+      "semantic_threshold": 0.8
+    },
+    "analytical": {
+      "rule_weights": {
+        "r01_strip_polite": 0.7,
+        "r05_remove_fillers": 0.8,
+        "r08_normalize_punctuation": 0.9
+      },
+      "preferred_llm": "gemini",
+      "semantic_threshold": 0.75
+    }
+  },
+  "default_intent": "instruction",
+  "composite_score_weights": {
+    "semantic": 0.5,
+    "conciseness": 0.3,
+    "clarity": 0.2
+  }
+}

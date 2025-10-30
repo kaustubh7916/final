@@ -1,0 +1,33 @@
+# Node
+node_modules/
+**/node_modules/
+.pnpm-store/
+
+# Env/Secrets
+.env
+**/.env
+.env.*
+
+# Logs & coverage
+logs/
+**/logs/
+coverage/
+**/coverage/
+*.log
+
+# Build outputs
+frontend/dist/
+**/dist/
+.vite/
+**/.vite/
+.cache/
+**/.cache/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Misc
+*.local

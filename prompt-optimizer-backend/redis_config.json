@@ -1,0 +1,7 @@
+{
+  "host": "",
+  "port": 0,
+  "cache_ttl_seconds": 86400,
+  "fallback_to_memory": true,
+  "memory_cache_limit": 1000
+}
